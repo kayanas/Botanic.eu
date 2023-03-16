@@ -1,0 +1,74 @@
+.botanic__features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.botanic__features-heading {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.botanic__features-heading h1 {
+    font-size: 44px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+
+.botanic__features-products-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.botanic__features-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.botanic__features-container img {
+    width: 300px;
+}
+
+@media screen and (max-width: 1380px) {
+    .botanic__features{
+        flex-direction: column;
+    }
+    .botanic__features-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+    .botanic__features-products-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .botanic__features-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .botanic__features-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .botanic__features-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+}
